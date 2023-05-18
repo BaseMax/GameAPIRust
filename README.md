@@ -31,6 +31,15 @@ You are required to implement the following endpoints:
 - `GET /api/bets` - Retrieve the details of a user's bets.
 - `GET /api/games/{gameId}/results` - Retrieve the results of a specific game.
 - `GET /api/leaderboard` - Retrieve the leaderboard of top users.
+- `GET /api/users/{userId}`: Retrieves the details of a specific user based on their userId.
+- `PUT /api/users/{userId}`: Updates the user's information, such as username, password, or other profile details.
+- `DELETE /api/users/{userId}`: Deletes a user account and associated data from the system.
+- `GET /api/games/{gameId}/bets`: Retrieves the list of bets placed on a specific game.
+- `PUT /api/bets/{betId}`: Updates an existing bet, allowing users to modify the amount or other details.
+- `DELETE /api/bets/{betId}`: Cancels a specific bet made by a user.
+- `GET /api/games/{gameId}/participants`: Retrieves the list of participants or teams involved in a specific game.
+- `POST /api/games/{gameId}/results`: Sets the results of a specific game, allowing authorized users to declare the outcome or winner.
+- `GET /api/users/{userId}/balance`: Retrieves the current balance or funds available for a user.
 
 ## API Endpoints
 
@@ -184,6 +193,40 @@ Response:
   ]
 }
 ```
+
+TODO...
+
+## Description of API Endpoints
+
+#### `POST /api/users`
+
+Creates a new user account by accepting a JSON payload with a username and password. Upon successful account creation, it returns the generated userId and the username in the response.
+
+#### `POST /api/authenticate`
+
+Authenticates a user by accepting a JSON payload with the username and password. If the provided credentials are valid, it returns an access token (accessToken) that can be used for subsequent API requests.
+
+#### `GET /api/games`
+
+Retrieves the list of available games for betting. It returns an array of game objects, each containing the gameId, name, startTime, and endTime properties, representing the game's unique identifier, name, start time, and end time respectively.
+
+#### `POST /api/bets`
+
+Allows users to place a bet on a specific game by providing the gameId and the amount to bet. It returns the generated betId, the gameId the user bet on, and the amount of the bet placed.
+
+#### `GET /api/bets`
+
+Retrieves the details of a user's bets by returning an array of bet objects. Each bet object includes the betId, gameId, and amount of the bet placed by the user.
+
+#### `GET /api/games/{gameId}/results`
+
+Retrieves the results of a specific game by providing the gameId. It returns the gameId, name of the game, and the result of the game, which represents the outcome or winner of the game.
+
+#### `GET /api/leaderboard`
+
+Retrieves the leaderboard of top users based on their total winnings. It returns an array of leaderboard objects, each containing the userId, username, and totalWinnings of the user, indicating their position in the leaderboard based on the amount they have won.
+
+TODO...
 
 ## Requirements
 
