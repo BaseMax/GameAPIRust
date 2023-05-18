@@ -37,7 +37,7 @@ You are required to implement the following endpoints:
 - `GET /api/games/{gameId}/bets`: Retrieves the list of bets placed on a specific game.
 - `PUT /api/bets/{betId}`: Updates an existing bet, allowing users to modify the amount or other details.
 - `DELETE /api/bets/{betId}`: Cancels a specific bet made by a user.
-- `GET /api/games/{gameId}/participants`: Retrieves the list of participants or teams involved in a specific game.
+- `GET /api/games/{gameId}/participants`: Retrieves the list of participants involved in a specific game.
 - `POST /api/games/{gameId}/results`: Sets the results of a specific game, allowing authorized users to declare the outcome or winner.
 - `GET /api/users/{userId}/balance`: Retrieves the current balance or funds available for a user.
 
