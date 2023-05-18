@@ -24,13 +24,13 @@ Your task is to design and implement a RESTful API for a betting platform. The A
 
 You are required to implement the following endpoints:
 
-- `POST /api/users - Create a new user account.
-- `POST /api/authenticate - Authenticate a user and retrieve an access token.
-- `GET /api/games - Retrieve the list of available games.
-- `POST /api/bets - Place a bet on a game.
-- `GET /api/bets - Retrieve the details of a user's bets.
-- `GET /api/games/{gameId}/results - Retrieve the results of a specific game.
-- `GET /api/leaderboard - Retrieve the leaderboard of top users.
+- `POST /api/users` - Create a new user account.
+- `POST /api/authenticate` - Authenticate a user and retrieve an access token.
+- `GET /api/games` - Retrieve the list of available games.
+- `POST /api/bets` - Place a bet on a game.
+- `GET /api/bets` - Retrieve the details of a user's bets.
+- `GET /api/games/{gameId}/results` - Retrieve the results of a specific game.
+- `GET /api/leaderboard` - Retrieve the leaderboard of top users.
 
 ## API Endpoints
 
@@ -125,3 +125,88 @@ Response:
 }
 ```
 
+`GET /api/bets`
+
+Retrieves the details of a user's bets.
+
+Response:
+
+```json
+{
+  "bets": [
+    {
+      "betId": "456",
+      "gameId": "1",
+      "amount": 100
+    },
+    {
+      "betId": "789",
+      "gameId": "2",
+      "amount": 50
+    }
+  ]
+}
+```
+
+`GET /api/games/{gameId}/results`
+
+Retrieves the results of a specific game.
+
+Response:
+
+```json
+{
+  "gameId": "1",
+  "name": "Football World Cup",
+  "result": "Germany"
+}
+```
+
+`GET /api/leaderboard`
+
+Retrieves the leaderboard of top users based on their total winnings.
+
+Response:
+
+```json
+{
+  "leaderboard": [
+    {
+      "userId": "123",
+      "username": "example_user",
+      "totalWinnings": 500
+    },
+    {
+      "userId": "456",
+      "username": "another_user",
+      "totalWinnings": 350
+    }
+  ]
+}
+```
+
+## Requirements
+
+Your implementation should adhere to the following requirements:
+
+- Use the Rocket web framework or any other Rust web framework of your choice.
+- Use JSON for data serialization and deserialization.
+- Implement proper error handling and response codes.
+- Include appropriate validation and authentication mechanisms.
+- Use a data storage mechanism of your choice (e.g., in-memory storage, SQLite, etc.).
+- Write clean and well-documented code with appropriate comments.
+- Include unit tests and/or integration tests to validate the functionality of your code.
+
+## Additional Notes
+
+- Feel free to make reasonable assumptions to complete the assignment if certain requirements are not explicitly mentioned.
+- You can use any additional libraries or tools that you deem necessary to complete the task.
+
+Please let me know if you need any further assistance or if there's anything else I can help you with.
+
+## Authors
+
+- ...
+- Max Base
+
+Copyright 2023, Max Base
