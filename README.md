@@ -247,6 +247,20 @@ Your implementation should adhere to the following requirements:
 
 Please let me know if you need any further assistance or if there's anything else I can help you with.
 
+## Disclaimer: This Betting Web Service API Project
+
+Please note that this Betting Web Service API project is purely intended for educational purposes and should not be used in production environments. It is essential to exercise caution and be aware of the potential risks associated with real-world betting systems.
+
+Using this project in a live production setting may expose you to various legal, financial, and regulatory challenges that require careful consideration and adherence to applicable laws and regulations specific to your jurisdiction.
+
+We strongly advise against deploying this project as a live betting platform without conducting a thorough assessment of legal and regulatory requirements. It is your responsibility to ensure compliance with all relevant laws, regulations, and licensing obligations applicable to online betting services.
+
+By accessing or utilizing this project, you agree that you understand the aforementioned disclaimer and that you will not use this project for any production or commercial purposes. The developers and contributors of this project shall not be held liable for any consequences arising from the use of this project in any unauthorized or inappropriate manner.
+
+If you have any questions or concerns regarding the usage of this project, please seek legal advice or consult with the appropriate authorities before proceeding.
+
+**Note:** It is crucial to consult legal professionals and comply with all applicable laws and regulations when developing and deploying any real-world gambling or betting services.
+
 ## Authors
 
 - ...
