@@ -1,4 +1,4 @@
-# Betting Web Service API
+# Game Web Service API
 
 Welcome to our Betting Web Service API assignment! In this assignment, you will be developing a web service API for a betting platform that allows users to place bets on various games. This assignment will assess your ability to design and implement a RESTful API using Rust and relevant web frameworks. Please read the instructions below to get started.
 
